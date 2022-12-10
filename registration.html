@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+        function lettersOnly(input){
+        var regex = /[^a-z]/gi;
+        input.value = input.value.replace(regex,"");
+    }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+      $(document).ready(function () {
+         $('#txtUserName').keypress(function (key) {              
+
+              var regexprn = new RegExp("^[a-zA-Z0-9@]+$");
+              var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+              if (!regexprn.test(key)) {
+                    event.preventDefault();
+                    $('#lblMsg').css('display', 'block');
+                    return false;
+               }
+              else {
+                    $('#lblMsg').css('display', 'none');
+               }
+            })
+        });
+    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+              $(document).ready(function () {
+                 $('#txtUserNameaa').keypress(function (key) {              
+        
+                      var regexprn = new RegExp("^[a-zA-Z0-9]+$");
+                      var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                      if (!regexprn.test(key)) {
+                            event.preventDefault();
+                            $('#lblMsg').css('display', 'block');
+                            return false;
+                       }
+                      else {
+                            $('#lblMsg').css('display', 'none');
+                       }
+                    })
+                });
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                     $('#txtUserNamebb').keypress(function (key) {              
+            
+                          var regexprn = new RegExp("^[a-zA-Z0-9@]+$");
+                          var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                          if (!regexprn.test(key)) {
+                                event.preventDefault();
+                                $('#lblMsg').css('display', 'block');
+                                return false;
+                           }
+                          else {
+                                $('#lblMsg').css('display', 'none');
+                           }
+                        })
+                    });
+                </script>
+                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                 <script type="text/javascript">
+                       $(document).ready(function () {
+                          $('#txtUserNamecc').keypress(function (key) {              
+                 
+                               var regexprn = new RegExp("^[a-zA-Z0-9]+$");
+                               var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                               if (!regexprn.test(key)) {
+                                     event.preventDefault();
+                                     $('#lblMsg').css('display', 'block');
+                                     return false;
+                                }
+                               else {
+                                     $('#lblMsg').css('display', 'none');
+                                }
+                             })
+                         });
+                     </script>
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                            $(document).ready(function () {
+                               $('#txtUserNamedd').keypress(function (key) {              
+                      
+                                    var regexprn = new RegExp("^[a-zA-Z0-9]+$");
+                                    var key = String.fromCharCode(event.charCode ? event.which :event.charCode);
+                                    if (!regexprn.test(key)) {
+                                          event.preventDefault();
+                                          $('#lblMsg').css('display', 'block');
+                                          return false;
+                                     }
+                                    else {
+                                          $('#lblMsg').css('display', 'none');
+                                     }
+                                  })
+                              });
+                          </script>
+<head>
+	<title>Registration</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bgpic">
+        <img src="https://assets.website-files.com/5e51b3b0337309d672efd94c/5e5346352c16e8d69e1649f2_cover_hero-1.svg">
+    </div>
+    <div class="cont">
+        <div class="form sign-in">
+        <h2>Sign In</h2>
+        <label>
+            <span>Email Address</span>
+            <input type = "UserName"  name = "" id = "txtUserName" required style = "width:100%">
+            <label id="lblMsg" style="display:none; color:rgb(240, 119, 143)"> Special characters are not allowed.</label>
+        </label>
+        <label>
+            <span>Password</span>
+            <input type = "password"  name = "password" id = "txtUserNameaa" required style = "width:100%">
+            <label id="lblMsg" style="display:none; color:crimson"> Sepecial characters and spaces are not allowed.</label>
+        </label>
+        <button class="submit" type="button"><a href="pcware.html" style="text-decoration: none; color: white;">Sign In</a></button>
+        <p class="forgot-pass">Forgot Password ?</p>
+        <div class="social-media">
+            <ul>
+                <li><img src="images/facebook.png"></li>
+                <li><img src="images/twitter.png"></li>
+                <li><img src="images/linkedin.png"></li>
+                <li><img src="images/instagram.png"></li>
+            </ul>
+        </div>
+    </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img-text m-up">
+                    <h2>New here?</h2>
+                    <p>Sign up and discover great amount of new opportunities!</p>
+                </div>
+                <div class="img-text m-in">
+                    <h2>One of us?</h2>
+                    <p>If you already has an account, just sign in. We've missed you!</p>
+                </div>
+                <div class="img-btn">
+                    <span class="m-up">Sign Up</span>
+                    <span class="m-in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>Sign Up</h2>
+                <label>
+                    <span>Name</span>
+                    <input type="text" onkeyup="lettersOnly(this)">
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type = "Email"  name = "" id = "txtUserNamebb" required style = "width:100%">
+                    <label id="lblMsg" style="display:none; color:crimson"> Sepecial characters and spaces are not allowed.</label>
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type = "password"  name = "" id = "txtUserNamecc" required style = "width:100%">
+                    <label id="lblMsg" style="display:none; color:crimson"> Sepecial characters and spaces are not allowed.</label>
+                </label>
+                <label>
+                    <span>Confirm Password</span>
+                    <input type = "password"  name = "" id = "txtUserNamedd" required style = "width:100%">
+                    <label id="lblMsg" style="display:none; color:crimson"> Sepecial characters and spaces are not allowed.</label>
+                </label>
+                <button type="button" class="submit" id="submit">Sign Up Now</button>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+<script>
+    document.querySelector('.img-btn').addEventListener('click', function()
+	{
+		document.querySelector('.cont').classList.toggle('s-signup')
+	}
+);
+    document.querySelector('#submit').addEventListener('click', function()
+	{
+		document.querySelector('.cont').classList.toggle('s-signup')
+	}
+);
+</script>
